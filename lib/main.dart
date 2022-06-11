@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:awesome_dialog/awesome_dialog.dart';
+import 'package:layoutexample/containerpage.dart';
+import 'package:layoutexample/hypotenuse.dart';
 
 void main() => runApp(const MyApp());
 
@@ -43,9 +45,17 @@ class MyWidget extends StatelessWidget {
           },
         ),
         IconButton(
-          icon: const Icon(Icons.lightbulb_sharp),
+          icon: const Icon(Icons.link),
           onPressed: () {
-            print('IconButton pressed');
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const ContainerPage()));
+          },
+        ),
+        IconButton(
+          icon: const Icon(Icons.calculate),
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => HypotenusePage()));
           },
         ),
       ],
