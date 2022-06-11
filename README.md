@@ -1,6 +1,6 @@
-# layoutexample
+# Flutter Layout Example with Popup
 
-A new Flutter project.
+This is an initial project in Flutter to test on how to build layouts and nice popups. 
 
 ## Getting Started
 
